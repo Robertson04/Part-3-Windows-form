@@ -10,11 +10,22 @@ using System.Windows.Forms;
 
 namespace Part_3_Windows_form
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string name = txtInput.Text;
+            lblMessage.Text = "Greetings " + name;
+        }
+
+        private void lblMessage_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
